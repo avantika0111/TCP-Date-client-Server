@@ -11,7 +11,7 @@ class TCPDateServer
             Socket soc=s.accept();
             DataOutputStream out=new DataOutputStream(soc.getOutputStream());
             out.writeBytes("Server Date : " + (new Date()).toString() + "\n");
-			System.out.println("Done!!\nServer Exiting!!!");
+			System.out.println("Tak Completed!!\nServer Exiting!!!");
             out.close();
             soc.close();     
     }
